@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 REPO_NAME = "Wine-Quality-End-to-End-ML-Project"
 AUTHOR_USER_NAME = "aditya345-coder"
 SRC_REPO = "mlProject"
-AUTHOR_EMAIL = "adityagaharwar55@gmail.com"
+AUTHOR_EMAIL = "neuralninja01@gmail.com"
 
 
 setuptools.setup(

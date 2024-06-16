@@ -164,3 +164,4 @@ cython_debug/
 # Extra files to be ignored
 ERRORS.txt
 artifacts/*
+mlruns/*
