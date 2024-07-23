@@ -12,7 +12,7 @@ https://github.com/aditya345-coder/Wine-Quality-End-to-End-ML-Project
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n mlproj python=3.8 -y
+conda create -n mlproj python=3.11 -y
 ```
 
 ```bash
@@ -33,21 +33,18 @@ python app.py
 
 Now,
 ```bash
-open up you local host and port
+open up your local host and port
 ```
 
 
 
-## MLflow
-
-[Documentation](https://mlflow.org/docs/latest/index.html)
+## [MLflow](https://mlflow.org/docs/latest/index.html)
 
 
 ##### cmd
 - mlflow ui
 
-### dagshub
-[dagshub](https://dagshub.com/)
+### [dagshub](https://dagshub.com/)
 
 import dagshub
 dagshub.init(repo_owner='neuralninja01', repo_name='Wine-Quality-End-to-End-ML-Project', mlflow=True)
