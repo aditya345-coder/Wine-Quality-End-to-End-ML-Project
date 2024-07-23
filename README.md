@@ -44,7 +44,7 @@ open up your local host and port
 ##### cmd
 - mlflow ui
 
-### [dagshub](https://dagshub.com/)
+### [DagsHub](https://dagshub.com/)
 
 import dagshub
 dagshub.init(repo_owner='neuralninja01', repo_name='Wine-Quality-End-to-End-ML-Project', mlflow=True)
