@@ -73,4 +73,8 @@ MLflow
  - Trace all of your expriements
  - Logging & tagging your model
 
+## Deployment
+
+You can check the deployed version [here](https://wine-quality-end-to-end-ml-project.onrender.com/).
+
 
