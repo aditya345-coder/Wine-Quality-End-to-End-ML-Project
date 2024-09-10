@@ -11,7 +11,7 @@ ensure==1.0.2
 joblib==1.4.2
 types-PyYAML
 Flask==2.3.3
-Flask-Cors==4.0.1
+Flask-Cors==5.0.0
 notebook==7.2.2
 gunicorn
 -e .
