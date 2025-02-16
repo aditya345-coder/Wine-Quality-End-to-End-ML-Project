@@ -2,7 +2,7 @@ numpy==1.26.4
 pandas==2.2.2
 matplotlib==3.9.1
 seaborn==0.13.2
-mlflow==2.2.2
+mlflow==2.14.2
 scikit-learn==1.5.1
 python-box==6.0.2
 pyYAML==6.0.1
@@ -11,7 +11,7 @@ ensure==1.0.2
 joblib==1.4.2
 types-PyYAML
 Flask==2.3.3
-Flask-Cors==4.0.1
-notebook==7.2.1
+Flask-Cors==5.0.0
+notebook==7.2.2
 gunicorn
 -e .
