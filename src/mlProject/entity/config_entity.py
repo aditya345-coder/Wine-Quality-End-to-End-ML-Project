@@ -33,8 +33,10 @@ class ModelTrainerConfig:
     train_data_path: Path
     test_data_path: Path
     model_name: str
-    alpha: float
-    l1_ratio: float
+    scaler_name: str
+    max_depth: int
+    n_estimators: int
+    random_state: int
     target_column: str
 
 
@@ -44,6 +46,7 @@ class ModelEvaluationConfig:
     root_dir: Path
     test_data_path: Path
     model_path: Path
+    scaler_path: Path
     all_params: dict
     metric_file_name: Path
     target_column: str

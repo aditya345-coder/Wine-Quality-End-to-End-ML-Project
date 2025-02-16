@@ -69,7 +69,7 @@ class ConfigurationManager:
 
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.ElasticNet
+        params = self.params.RandomForestClassifier
         schema =  self.schema.TARGET_COLUMN
 
         create_directories([config.root_dir])
@@ -79,8 +79,10 @@ class ConfigurationManager:
             train_data_path = config.train_data_path,
             test_data_path = config.test_data_path,
             model_name = config.model_name,
-            alpha = params.alpha,
-            l1_ratio = params.l1_ratio,
+            scaler_name = config.scaler_name, 
+            max_depth = params.max_depth,
+            n_estimators = params.n_estimators,
+            random_state = params.random_state,            
             target_column = schema.name
             
         )
@@ -91,7 +93,7 @@ class ConfigurationManager:
 
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config.model_evaluation
-        params = self.params.ElasticNet
+        params = self.params.RandomForestClassifier
         schema =  self.schema.TARGET_COLUMN
 
         create_directories([config.root_dir])
@@ -100,6 +102,7 @@ class ConfigurationManager:
             root_dir=config.root_dir,
             test_data_path=config.test_data_path,
             model_path = config.model_path,
+            scaler_path=config.scaler_path,
             all_params=params,
             metric_file_name = config.metric_file_name,
             target_column = schema.name,

@@ -1,4 +1,4 @@
-# Wine-Quality-End-to-End-ML-Project
+# Wine Quality End to End ML Project
 
 
 # How to run?
@@ -9,14 +9,14 @@ Clone the repository
 ```bash
 https://github.com/aditya345-coder/Wine-Quality-End-to-End-ML-Project
 ```
-### STEP 01- Create a conda environment after opening the repository
+### STEP 01- Create a virtual environment after opening the repository
 
 ```bash
-conda create -n mlproj python=3.11 -y
+python -m virtualenv venv
 ```
 
 ```bash
-conda activate mlproj
+..\\venv\\Scripts\\activate
 ```
 
 
@@ -38,7 +38,6 @@ Now,
 ```bash
 open up your local host and port
 ```
-
 
 
 ## [MLflow](https://mlflow.org/docs/latest/index.html)
@@ -72,5 +71,9 @@ MLflow
  - Its Production Grade
  - Trace all of your expriements
  - Logging & tagging your model
+
+## Deployment
+
+You can check the deployed version [here](https://wine-quality-end-to-end-ml-project.onrender.com/).
 
 

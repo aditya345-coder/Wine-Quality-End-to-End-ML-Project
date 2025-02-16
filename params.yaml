@@ -1,3 +1,4 @@
-ElasticNet:
-  alpha: 0.8
-  l1_ratio: 0.9
+RandomForestClassifier:
+  max_depth: 20
+  n_estimators: 300
+  random_state: 42
