@@ -74,5 +74,3 @@ The project is deployed and accessible here:
 🔗 **[Live Demo](https://wine-quality-end-to-end-ml-project.onrender.com/)**  
 
 ---
-
-This version improves clarity, formatting, and readability while making it more structured and engaging. Let me know if you need any modifications! 🚀
