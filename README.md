@@ -1,79 +1,85 @@
-# Wine Quality End to End ML Project
+Here's an improved version of your GitHub README with better structure, clarity, and formatting:  
 
+---
 
-# How to run?
-### STEPS:
+# 🍷 Wine Quality Prediction – End-to-End ML Project  
 
-Clone the repository
+## 📌 Overview  
+This project is an end-to-end machine learning system that predicts wine quality based on its characteristics. It includes data preprocessing, model training, experiment tracking with MLflow, and deployment via Flask.  
 
+🔹 **Tech Stack**: Python, Flask, Scikit-Learn, MLflow, DagsHub, Render  
+🔹 **Features**: Model training pipeline, experiment tracking, web-based predictions  
+
+## 🚀 How to Run  
+
+### 1️⃣ Clone the Repository  
 ```bash
-https://github.com/aditya345-coder/Wine-Quality-End-to-End-ML-Project
+git clone https://github.com/aditya345-coder/Wine-Quality-End-to-End-ML-Project.git
+cd Wine-Quality-End-to-End-ML-Project
 ```
-### STEP 01- Create a virtual environment after opening the repository
 
+### 2️⃣ Create and Activate Virtual Environment  
 ```bash
-python -m virtualenv venv
+python -m venv venv
 ```
-
+#### Windows  
 ```bash
-..\\venv\\Scripts\\activate
+venv\Scripts\activate
+```
+#### macOS/Linux  
+```bash
+source venv/bin/activate
 ```
 
-
-### STEP 02- install the requirements
+### 3️⃣ Install Dependencies  
 ```bash
 pip install -r requirements.txt
 ```
 
+### 4️⃣ Run the Application  
 ```bash
-python main.py
+python main.py   # Model training
+python app.py    # Run Flask web app
 ```
 
+### 5️⃣ Access Locally  
+After running `app.py`, open your browser and visit:  
+```
+http://127.0.0.1:<PORT>
+```
+(Replace `<PORT>` with the actual port displayed in the terminal.)  
+
+## 📊 Experiment Tracking with MLflow  
+### Start MLflow UI  
 ```bash
-# Finally run the following command
-python app.py
+mlflow ui
+```
+Access MLflow dashboard at:  
+```
+http://127.0.0.1:5000
 ```
 
-Now,
-```bash
-open up your local host and port
-```
-
-
-## [MLflow](https://mlflow.org/docs/latest/index.html)
-
-
-##### cmd
-- mlflow ui
-
-### [DagsHub](https://dagshub.com/)
-
+### Track Experiments on DagsHub  
+Initialize tracking in Python:  
+```python
 import dagshub
 dagshub.init(repo_owner='neuralninja01', repo_name='Wine-Quality-End-to-End-ML-Project', mlflow=True)
 
 import mlflow
 with mlflow.start_run():
-  mlflow.log_param('parameter name', 'value')
-  mlflow.log_metric('metric name', 1)
-
-Run this to export as env variables:
-
+    mlflow.log_param('parameter_name', 'value')
+    mlflow.log_metric('metric_name', 1)
+```
+Set environment variables for tracking:  
 ```bash
-
 export MLFLOW_TRACKING_URI=https://dagshub.com/neuralninja01/Wine-Quality-End-to-End-ML-Project.mlflow
-
 export MLFLOW_TRACKING_USERNAME=neuralninja01
 ```
 
-## About MLflow 
-MLflow
+## 📦 Deployment  
+The project is deployed and accessible here:  
+🔗 **[Live Demo](https://wine-quality-end-to-end-ml-project.onrender.com/)**  
 
- - Its Production Grade
- - Trace all of your expriements
- - Logging & tagging your model
+---
 
-## Deployment
-
-You can check the deployed version [here](https://wine-quality-end-to-end-ml-project.onrender.com/).
-
-
+This version improves clarity, formatting, and readability while making it more structured and engaging. Let me know if you need any modifications! 🚀
