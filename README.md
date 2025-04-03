@@ -1,7 +1,3 @@
-Here's an improved version of your GitHub README with better structure, clarity, and formatting:  
-
----
-
 # 🍷 Wine Quality Prediction – End-to-End ML Project  
 
 ## 📌 Overview  
