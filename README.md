@@ -3,9 +3,6 @@
 ## 📌 Overview  
 This project is an end-to-end machine learning system that predicts wine quality based on its characteristics. It includes data preprocessing, model training, experiment tracking with MLflow, and deployment via Flask.  
 
-🔹 **Tech Stack**: Python, Flask, Scikit-Learn, MLflow, DagsHub, Render  
-🔹 **Features**: Model training pipeline, experiment tracking, web-based predictions  
-
 ## 🚀 How to Run  
 
 ### 1️⃣ Clone the Repository  
