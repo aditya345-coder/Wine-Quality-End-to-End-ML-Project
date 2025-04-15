@@ -16,5 +16,5 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-  name: quality
+  name: quality_label
   
