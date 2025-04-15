@@ -56,6 +56,7 @@ class ModelTrainer:
         # Train the RandomForestClassifier
         model = RandomForestClassifier(
             max_depth=self.config.max_depth,
+            class_weight=self.config.class_weight,
             n_estimators=self.config.n_estimators,
             random_state=self.config.random_state
         )

@@ -35,6 +35,7 @@ class ModelTrainerConfig:
     model_name: str
     scaler_name: str
     max_depth: int
+    class_weight: str
     n_estimators: int
     random_state: int
     target_column: str

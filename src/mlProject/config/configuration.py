@@ -81,6 +81,7 @@ class ConfigurationManager:
             model_name = config.model_name,
             scaler_name = config.scaler_name, 
             max_depth = params.max_depth,
+            class_weight = params.class_weight,
             n_estimators = params.n_estimators,
             random_state = params.random_state,            
             target_column = schema.name

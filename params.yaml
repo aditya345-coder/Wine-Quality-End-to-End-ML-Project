@@ -1,4 +1,5 @@
 RandomForestClassifier:
   max_depth: 20
+  class_weight: 'balanced'
   n_estimators: 300
   random_state: 42
