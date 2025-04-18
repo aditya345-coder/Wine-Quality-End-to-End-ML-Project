@@ -3,6 +3,11 @@
 ## 📌 Overview  
 This project aims to predict the quality of red wine based on various physicochemical attributes using machine learning. The project follows a complete end-to-end ML pipeline, from data preprocessing and modeling to deployment using a Flask web application.
 
+Dataset
+* Source: [Kaggle - Wine Quality Dataset](https://www.kaggle.com/datasets/yasserh/wine-quality-dataset)
+* Attributes: 11 physicochemical features + quality score
+* Target Column: Quality (score between 0 and 10)
+
 ## Project Structure
 
 ```
