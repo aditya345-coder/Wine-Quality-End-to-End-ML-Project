@@ -24,21 +24,10 @@ class ModelTrainer:
         y_train = train_data[self.config.target_column]
         y_test = test_data[self.config.target_column]
 
-        # Define skewed and non-skewed features
-        skewed_features = ['volatile acidity', 'citric acid', 'residual sugar', 'chlorides',  
-                           'free sulfur dioxide', 'total sulfur dioxide', 'sulphates', 'alcohol']
         all_features = X_train.columns.tolist()
-        other_features = [col for col in all_features if col not in skewed_features]
-
-        # ColumnTransformer: Apply PowerTransformer on skewed features and passthrough others
-        column_transformer = ColumnTransformer(transformers=[
-            ('power', PowerTransformer(method='yeo-johnson'), skewed_features),
-            ('passthrough', 'passthrough', other_features)
-        ])
-
+        
         # Wrap ColumnTransformer in a pipeline with MinMaxScaler
         preprocessing_pipeline = Pipeline([
-            ('transformer', column_transformer),
             ('minmax_scaler', MinMaxScaler())
         ])
 

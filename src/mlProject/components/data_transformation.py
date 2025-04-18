@@ -5,17 +5,14 @@ import pandas as pd
 from mlProject.entity.config_entity import DataTransformationConfig
 
 
-
 class DataTransformation:
     def __init__(self, config: DataTransformationConfig):
         self.config = config
 
     def _map_quality(self, score):
         """Private method to map wine quality to Low/Medium/High."""
-        if score <= 4:
+        if score <= 5:
             return 'Low'
-        elif score <= 6:
-            return 'Medium'
         else:
             return 'High'
 
@@ -29,7 +26,7 @@ class DataTransformation:
         data['quality_label'] = data['quality'].apply(self._map_quality)
 
         # Drop the original quality column
-        data.drop(columns='quality', inplace=True)
+        data.drop(columns=['quality', 'Id'], inplace=True)
 
         # Split the data into training and test sets
         train, test = train_test_split(data, test_size=0.2, random_state=42)
