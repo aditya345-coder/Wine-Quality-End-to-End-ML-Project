@@ -30,8 +30,10 @@ class DataTransformationConfig:
 @dataclass(frozen=True)
 class ModelTrainerConfig:
     root_dir: Path
-    train_data_path: Path
-    test_data_path: Path
+    X_train_data_path: Path
+    y_train_data_path: Path
+    X_test_data_path: Path
+    y_test_data_path: Path
     model_name: str
     scaler_name: str
     max_depth: int
@@ -45,7 +47,8 @@ class ModelTrainerConfig:
 @dataclass(frozen=True)
 class ModelEvaluationConfig:
     root_dir: Path
-    test_data_path: Path
+    X_test_data_path: Path
+    y_test_data_path: Path
     model_path: Path
     scaler_path: Path
     all_params: dict
